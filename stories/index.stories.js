@@ -16,13 +16,13 @@ storiesOf('Welcome', module).add('to Storybook', () => ({
 storiesOf('Button', module)
   .add('with text', () => ({
     components: { MyButton },
-    template: '<my-button @click="action">Hello Button</my-button>',
+    template: '<my-button @click="action">Hello Button Testing..</my-button>',
     methods: { action: action('clicked') },
   }))
   .add('with JSX', () => ({
     components: { MyButton },
     render(h) {
-      return <my-button onClick={this.action}>With JSX</my-button>;
+      return <my-button onClick={this.action}>With JSX AJAY</my-button>;
     },
     methods: { action: linkTo('clicked') },
   }))
