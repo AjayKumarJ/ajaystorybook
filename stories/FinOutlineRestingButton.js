@@ -23,7 +23,7 @@ export default {
   
     template: `
       <button :style="buttonStyles" @click="onClick">
-        {{abc}}<slot></slot>
+        <slot></slot>
       </button>
     `,
   
