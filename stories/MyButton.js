@@ -11,13 +11,14 @@ export default {
         fontSize: 15,
         padding: '3px 10px',
         margin: 10,
+        color: "red",
       },
     };
   },
 
   template: `
     <button :style="buttonStyles" @click="onClick">
-      <slot></slot>
+      {{abc}}<slot></slot>
     </button>
   `,
 
